@@ -1,0 +1,101 @@
+
+
+   .add {
+    width: 100%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+  .dashboard-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: goldenrod;
+  }
+  
+  .stat-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    width: 100%; 
+    max-width: 1200px; 
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+  }
+  .card h3 {
+    color: goldenrod;
+  }
+  .text {
+    display: block;
+  }
+  .image {
+    margin-top: 20px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    display: block;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .line {
+    width: 50%;
+  }
+  .table-container {
+    margin-top: 20px;
+  }
+
+  .chart {
+    width: 80%; 
+    max-width: 900px; 
+  }
+
+  /* .chart:last-child {
+    max-width: 600px;
+    width: 45%;
+  }
+   */
+
+
+
+  @media (max-width: 950px) {
+    .stat-cards {
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 10px;
+    }
+    .card {
+      width: 100%;
+    }
+    .chart-container {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .chart {
+      width: 60%; 
+    max-width: 500px; 
+
+    }
+  }

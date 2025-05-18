@@ -1,0 +1,85 @@
+.user {
+    gap: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    align-items: center;
+    /* width: 100%; */
+    position: relative;
+  }
+ 
+  .user-title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .user button {
+    background: transparent;
+    color: rgb(39, 39, 29);
+    border: 1px solid goldenrod;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  .user button:hover {
+    background-color: goldenrod ;
+    color: #ffffff;
+  }
+  .user-table {
+    width: 100%;
+  }
+
+  .user-table-format {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    width: 100%;
+  }
+  .user-table-format.title {
+    background-color: #f9f9f9;
+    
+  }
+  .user-table-format img {
+    width: 50px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+  }
+  
+  .actions img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+
+
+  @media (max-width: 600px) {
+    .user-table-format{
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    .user-table-format.title {
+      display: none;
+    }
+    
+  }
+  

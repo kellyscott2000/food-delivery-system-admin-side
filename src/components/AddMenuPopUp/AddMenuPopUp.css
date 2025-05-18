@@ -1,0 +1,94 @@
+.menu-popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+.menu-popup-container {
+    place-self: center;
+    width: max(40vw,350px);
+    color: #808080;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+}
+.menu-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: goldenrod;
+}
+.menu-popup-title img {
+    width: 16px;
+    cursor: pointer;
+}
+.menu-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-popup-inputs input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.menu-popup-inputs label {
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    color: #808080;
+    background-color: white;
+    cursor: pointer;
+}
+.menu-popup-inputs label input[type="file"] {
+    display: none; 
+}
+.menu-popup-inputs textarea{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    resize: none;
+}
+.menu-popup-inputs select{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.menu-popup-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: goldenrod;
+    font-size: 15px;
+    cursor: pointer;
+}
+.menu-popup-inputs img {
+    width: 120px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
